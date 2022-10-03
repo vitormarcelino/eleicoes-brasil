@@ -29,7 +29,12 @@
 
 .card--title {
   text-transform: uppercase;
-  padding: 0 0 16px 0;
+
+}
+
+.card--last-update {
+  padding: 16px 0;
+  font-size: 12px;
 }
 
 .card--candidato {

@@ -66,7 +66,8 @@ function Card(props) {
 
   return (
     <div className={`card card--style--${candidatos[0].n}`}>
-      <h2 className='card--title'>{props.uf.name}</h2>
+      <h2 className='card--title'>{props.uf.name} ({result.data.pst}%)</h2>
+      <p className='card--last-update'>Última atualização: {result.data.hg}</p>
       <ul className='card--candidatos'>
         {candidatos.map((cand, index) => (
           <li className='card--candidato' key={`${props.cdabr}-cand-${index}`}>
