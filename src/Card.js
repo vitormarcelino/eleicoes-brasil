@@ -6,7 +6,7 @@ export default function Card(props) {
 
   useEffect(() => {
     async function getData() {
-      const request = await fetch(`https://resultados.tse.jus.br/oficial/ele2022/544/dados-simplificados/${props.uf.id}/${props.uf.id}-c0001-e000545-r.json`);
+      const request = await fetch(`https://resultados.tse.jus.br/oficial/ele2022/545/dados-simplificados/${props.uf.id}/${props.uf.id}-c0001-e000545-r.json`);
       const data = await request.json();
 
       setResult({ uf: props.uf, data });
